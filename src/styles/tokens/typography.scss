@@ -1,0 +1,88 @@
+@use "./colors" as *;
+
+// Base font family
+$font-family-base: "Inter", sans-serif;
+
+// Font sizes
+$font-size-xs: 0.875rem; // 14px
+$font-size-sm: 1rem; // 16px
+$font-size-md: 1.25rem; // 20px
+$font-size-lg: 1.5rem; // 24px
+$font-size-xl: 2rem; // 32px
+$font-size-2xl: 2.25rem; // 36px
+$font-size-3xl: 2.625rem; // 42px
+
+// Line heights
+$line-height-xs: 1rem;
+$line-height-sm: 1.25rem;
+$line-height-md: 1.5rem;
+$line-height-lg: 1.75rem;
+$line-height-xl: 2rem;
+
+// Font weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Colors
+$font-color-default: $color-text-300;
+$font-color-subtle: $color-text-200;
+$font-color-inverted: $color-text-100;
+
+// Text style mixins
+@mixin text-heading {
+  font-family: $font-family-base;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-xl;
+}
+
+@mixin text-title-lg {
+  font-family: $font-family-base;
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-lg;
+}
+
+@mixin text-title-md {
+  font-family: $font-family-base;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-md;
+}
+
+@mixin text-title-sm {
+  font-family: $font-family-base;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-sm;
+}
+
+@mixin text-subtitle {
+  font-family: $font-family-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-sm;
+}
+
+@mixin text-body-lg {
+  font-family: $font-family-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-sm;
+}
+
+@mixin text-body-md {
+  font-family: $font-family-base;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-sm;
+}
+
+@mixin text-body-sm {
+  font-family: $font-family-base;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-sm;
+}
